@@ -23,6 +23,7 @@ public class HomeUIMenuController : MonoBehaviour
     private bool isLoadComp = false;
     private float currentProgessBar;
     #endregion
+
     #region ==== Unity LifeCirle ====
 
     // Start is called before the first frame update
@@ -32,6 +33,7 @@ public class HomeUIMenuController : MonoBehaviour
         settingScreen.SetActive(false);
         creditsScreen.SetActive(false);
         loadingGroup.SetActive(false);
+        progessBar.enabled = false;
         progessBar.value = 0;
     }
 
@@ -43,6 +45,7 @@ public class HomeUIMenuController : MonoBehaviour
         UpdateProgessBar();
     }
     #endregion
+
     #region My Methods
     public void NewGameButtonClick()
     {
